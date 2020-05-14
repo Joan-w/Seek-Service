@@ -7,11 +7,11 @@
                 margin: auto;
                 text-align: center;
                 font-family: arial;">
-                <img src="/w3images/team2.jpg" alt="Profile picture of {{ provider.username }}" style="width:100%">
+                <img src="{{ provider.image_file }}" alt="Profile picture of {{ provider.username }}" style="width:100%">
                 <h1
                 style="color: grey;
                 font-size: 18px;">
-                {{ provider.first_name }} {{ provider.last_name }} ({{ provider.username }})
+                {{ provider.full_name }} ({{ provider.username }})
                 </h1>
 
                 <p class="title">{{ provider.specialty }}</p>

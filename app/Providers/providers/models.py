@@ -1,7 +1,7 @@
 from providers import db, login_manager
 from flask_login import UserMixin
 
-@login_manager.provider_loader
+@login_manager.user_loader
 def load_provider(provider_id):
     return Provider.query.get(int(provider_id))
 

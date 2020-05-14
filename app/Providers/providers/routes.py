@@ -28,12 +28,13 @@ providers = [
 
 @app.route('/providers')
 def service_providers():
+    # image_file = url_for('static', filename='profile_pics/' + current_user.image_file), image_file=image_file
     return render_template('providers.html', title = "Service Providers", providers=providers)
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     # if current_user.is_authenticated:
-    #     return redirect(url_for('home'))
+    #     return redirect(url_for('service_providers'))
     form = RegistrationForm()
     if form.validate_on_submit():
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
