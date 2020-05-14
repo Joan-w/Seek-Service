@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+
+{% block styles%} 
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='service.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock %}
+
+{% block content %}
+<div class="about-section">
+    <h1>About Us Page</h1>
+    <p>We are a house booking service application that comes to your aid whenever you need house services and you might be new in your neighbourhood.</p>
+    <p>Why suffer the hustle of looking for a plumber or a gardener yet we offer such services through our reliable team.</p>
+    <p>So look no more just book now and experience the work of our reliable team</p>
+</div>
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="google"><i class="fa fa-google"></i></a>
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+</div>
+
+  
+  <h2 style="text-align:center">Our Services</h2>
+  <div class="row">
+      <div class="column">
+            <div class="card">
+                <img src="./images/79515605-plumbing-concept-plumber.jpg" alt="Jane" style="width:50%">
+                <div class="container">
+                  <h2>Plumbering</h2>
+                  <p>We offer this service at fair price.</p>
+                  <p>We fix your pipes and sinks in jiffy.</p>
+                  <p>Our team is harworking to deliver the best</p>
+                  <p><button class="button">Book now</button></p>
+                </div>
+            </div>
+      </div>
+      <div class="column">
+            <div class="card">
+                <img src="./images/gardening-romolotavani.jpg" alt="Jane" style="width:50%">
+                <div class="container">
+                  <h2>Gardening</h2>
+                  <p>This service is effortlessly affordable.</p>
+                  <p>We leave your garden in ship shape looking magnificent</p>
+                  <p>The team is up to the task</p>
+                  <p><button class="button">Book now</button></p>
+                </div>
+            </div>
+        </div>
+  </div>
+  <br>
+  <br>
+
+  <div class="row">
+       <div class="column">
+            <div class="card">
+                <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+                <div class="container">
+                  <h2>Painting</h2>
+                  <p>Ever needed to paint your house in amazing colors?</p>
+                  <p>Well we are the right people for this job.</p>
+                  <p>We paint your house and make it like a wonder color imagination</p>
+                  <p>Our team will definetly color your world</p>
+                  <p><button class="button">Book now</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+                <div class="container">
+                  <h2>Interior Decor</h2>
+                  <p>This service is one of the best we offer.</p>
+                  <p>We design your house according to your liking and style.</p>
+                  <p>Our team never dissapoints when it commes to this exalarating job.</p>
+                  <p><button class="button">Book now</button></p>
+                </div>
+          </div>
+        </div>
+  </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="column">
+                <div class="card">
+                    <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+                    <div class="container">
+                      <h2>House Cleaning</h2>
+                      <p>Ever needed someone to clean your house since you have no energy to do it?</p>
+                      <p>Well thats where we come to your aid by offering this services.</p>
+                      <p>Our cleaners are professionals with experience.</p>
+                      <p>You will surelly not regret their service to your house.</p>
+                      <p><button class="button">Book now</button></p>
+                    </div>
+                </div>
+        </div>
+
+        <div class="column">
+                <div class="card">
+                    <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+                    <div class="container">
+                      <h2>House Keeping</h2>
+                      <p>Ever wanted to go out for a trip and you had no one to look after your house while your gone?</p>
+                      <p>Well our team keeps your house safety and makes sure everything is working great.</p>
+                      <p>So no stressing how your house is ,just enjoy your trip while we look after it.</p>
+                      <p><button class="button">Book now</button></p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <br>
+    <br>
+{% endblock%}
