@@ -1,0 +1,57 @@
+{% extends 'layout.html' %}
+    {% block content %}
+        {% for provider in providers %}
+            <div class="card" 
+                style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;">
+                <img src="/w3images/team2.jpg" alt="Profile picture of {{ provider.username }}" style="width:100%">
+                <h1
+                style="color: grey;
+                font-size: 18px;">
+                {{ provider.first_name }} {{ provider.last_name }} ({{ provider.username }})
+                </h1>
+
+                <p class="title">{{ provider.specialty }}</p>
+                <p>{{ provider.bio }}</p>
+                <div style="margin: 24px 0;">
+                    <a href="#">
+                        <i class="fa fa-dribbble"
+                            style="text-decoration: none;
+                            font-size: 22px;
+                            color: black;">
+                        </i>
+                    </a> 
+                    <a href="#">
+                        <i class="fa fa-twitter"
+                            style="text-decoration: none;
+                            font-size: 22px;
+                            color: black;">
+                        </i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-instagram"
+                            style="text-decoration: none;
+                            font-size: 22px;
+                            color: black;">
+                        </i>
+                    </a>
+                </div>
+                <p><a class="btn btn-outline-info"
+                    style="border: none;
+                    outline: 0;
+                    display: inline-block;
+                    padding: 8px;
+                    color: white;
+                    background-color: #000;
+                    text-align: center;
+                    cursor: pointer;
+                    width: 100%;
+                    font-size: 18px;" href="#">
+                    Book
+                </a></p>
+            </div></br>                  
+        {% endfor %}
+    {% endblock %}
