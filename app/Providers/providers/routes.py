@@ -25,6 +25,10 @@ providers = [
     }
 ]
 
+@app.route('/')
+@app.route('/home')
+def home():
+    return render_template('home', title='Welcome to Seek-Service')
 
 @app.route('/providers')
 def service_providers():
