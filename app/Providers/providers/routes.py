@@ -2,7 +2,6 @@ from flask import url_for, render_template, redirect, flash
 from providers import app, bcrypt, db
 from providers.forms import RegistrationForm
 from providers.models import Provider
-from flask_login import current_user
 
 providers = [
     {
@@ -28,7 +27,7 @@ providers = [
 @app.route('/')
 @app.route('/home')
 def home():
-    return render_template('home', title='Welcome to Seek-Service')
+    return render_template('home.html', title='Welcome to Seek-Service')
 
 @app.route('/providers')
 def service_providers():
@@ -41,9 +40,8 @@ def register():
     #     return redirect(url_for('service_providers'))
     form = RegistrationForm()
     if form.validate_on_submit():
-        hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
         provider = Provider(username=form.username.data, email=form.email.data, phone_number=form.phone_number.data, county=form.county.data, 
-                            specialty=form.specialty.data, bio=form.bio.data, password=hashed_password)
+                            specialty=form.specialty.data, bio=form.bio.data)
         db.session.add(provider)
         db.session.commit()
         flash('Your account has been successfully created! You are now available for booking services.', 'success')

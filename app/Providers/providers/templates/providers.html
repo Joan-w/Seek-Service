@@ -7,7 +7,7 @@
                 margin: auto;
                 text-align: center;
                 font-family: arial;">
-                <img src="{{ provider.image_file }}" alt="Profile picture of {{ provider.username }}" style="width:100%">
+                <img src="{{ url_for('static', filename='profile_pic/default.png') }}" alt="Profile picture of {{ provider.username }}" style="width:100%">
                 <h1
                 style="color: grey;
                 font-size: 18px;">
