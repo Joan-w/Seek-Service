@@ -1,4 +1,5 @@
 from flask import Flask, url_for, render_template, redirect
+from forms import RegistrationForm
 
 app = Flask(__name__)
 
@@ -28,13 +29,13 @@ providers = [
 
 
 @app.route('/providers')
-def providers():
+def service_providers():
     return render_template('providers.html', title = "Service Providers", providers=providers)
 
 @app.route('/register')
 def register():
-    title = '<h1>Boss Bitch</h1>'
-    return title
+    form = RegistrationForm()
+    return render_template('register.html', title='Register Service Provider', form=form)
 
 if __name__ == '__main__':
     app.run(debug=True)
