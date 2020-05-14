@@ -1,10 +1,15 @@
-from providers import db
+from providers import db, login_manager
+from flask_login import UserMixin
 
-class Provider(db.Model):
+@login_manager.provider_loader
+def load_provider(provider_id):
+    return Provider.query.get(int(provider_id))
+
+class Provider(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(10), unique=True, nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
-    image_file = db.Column(db.String(20), nullable=False, default='default.jpg')
+    image_file = db.Column(db.String(20), nullable=False, default='default.png')
     phone_number = db.Column(db.String(12), unique=True)
     county = db.Column(db.String(20), nullable=False)
     specialty = db.Column(db.String(20), nullable=False)
