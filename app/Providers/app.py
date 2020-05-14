@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, url_for, render_template, redirect
 
 app = Flask(__name__)
 
@@ -28,7 +28,7 @@ providers = [
 
 
 @app.route('/providers')
-def service_providers():
+def providers():
     return render_template('providers.html', title = "Service Providers", providers=providers)
 
 @app.route('/register')
