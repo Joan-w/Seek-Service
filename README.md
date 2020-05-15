@@ -44,7 +44,7 @@ Book service | email | Service Booked
 
 ### Installations & setup
 To run this application on your local machine, you may have to run the following commands on your terminal on assumptions that Python2.6 and pip are already installed:
-- Clone the application by 
+- Clone the application by ```git clone: https://github.com/Joan-w/Seek-Service.git```
 - Install project dependancies as listed in the requirements.txt file by running `pip install -r requirements.txt`
 
 ### Support and Contact Details
