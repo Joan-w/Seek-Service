@@ -1,6 +1,9 @@
 # SEEK-SERVICE
 
-###### An online home services booking app.
+##### An online home services booking app.
+
+![Screenshot from 2020-05-15 17-07-49](https://user-images.githubusercontent.com/58691817/82059817-3af8c500-96cf-11ea-81e2-d876b6e635b8.png)
+
 
 ### Contributors
 
