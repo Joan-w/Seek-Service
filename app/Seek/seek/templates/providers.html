@@ -1,0 +1,105 @@
+{% extends 'layout.html' %}
+{% block content %}
+        <div class="card">
+            <article class="media ml-2">
+                <img class="rounded-circle mr-3 mt-2" style="width: 100px; height: 100px;" src="{{ url_for('static', filename='Images/female.jpg') }}">
+                <div class="media-body">
+                    <h5 class="mt-0" style = "text-decoration: none; font-weight: 700;">Jane</h5>
+                    <h5>Interior Decor</h5>
+                    <hr>
+                    <p>This service is one of the best we offer.</p>
+                    <p>We design your house according to your liking and style.</p>
+                    <p>Our team never dissapoints when it commes to this exalarating job.</p>
+                    <div>
+                        <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{{ url_for('provider.order') }}">Book Now</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        </br>
+        <div class="card">
+            <article class="media ml-2">
+                <img class="rounded-circle mr-3 mt-2" style="width: 100px; height: 100px;" src="{{ url_for('static', filename='Images/male.png') }}">
+                <div class="media-body">
+                    <h5 class="mt-0" style = "text-decoration: none; font-weight: 700;">John</h5>
+                    <h5>Gardening</h5>
+                    <hr>
+                    <p>This service is effortlessly affordable.</p>
+                    <p>We leave your garden in ship shape looking magnificent</p>
+                    <p>The team is up to the task</p>
+                    <div>
+                        <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{{ url_for('provider.order') }}">Book Now</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        </br>
+        <div class="card">
+            <article class="media ml-2">
+                <img class="rounded-circle mr-3 mt-2" style="width: 100px; height: 100px;" src="{{ url_for('static', filename='Images/male.png') }}">
+                <div class="media-body">
+                    <h5 class="mt-0" style = "text-decoration: none; font-weight: 700;">Philip</h5>
+                    <h5>Plumbing</h5>
+                    <hr>
+                    <h2>Plumbering</h2>
+                    <p>We offer this service at fair price.</p>
+                    <p>We fix your pipes and sinks in jiffy.</p>
+                    <p>Our team is harworking to deliver the best</p>
+                    <div>
+                        <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{{ url_for('provider.order') }}">Book Now</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        </br>
+        <div class="card">
+            <article class="media ml-2">
+                <img class="rounded-circle mr-3 mt-2" style="width: 100px; height: 100px;" src="{{ url_for('static', filename='Images/female.jpg') }}">
+                <div class="media-body">
+                    <h5 class="mt-0" style = "text-decoration: none; font-weight: 700;">Joyce</h5>
+                    <h5>Painting</h5>
+                    <hr>
+                    <p>Ever needed to paint your house in amazing colors?</p>
+                    <p>Well we are the right people for this job.</p>
+                    <p>We paint your house and make it like a wonder color imagination</p>
+                    <p>Our team will definetly color your world</p>
+                    <div>
+                        <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{{ url_for('provider.order') }}">Book Now</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="card">
+            <article class="media ml-2">
+                <img class="rounded-circle mr-3 mt-2" style="width: 100px; height: 100px;" src="{{ url_for('static', filename='Images/female.jpg') }}">
+                <div class="media-body">
+                    <h5 class="mt-0" style = "text-decoration: none; font-weight: 700;">Kate</h5>
+                    <h5>House Cleaning</h5>
+                    <hr>
+                    <p>Ever needed someone to clean your house since you have no energy to do it?</p>
+                    <p>Well thats where we come to your aid by offering this services.</p>
+                    <p>Our cleaners are professionals with experience.</p>
+                    <p>You will surelly not regret their service to your house.</p>
+                    <div>
+                        <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{{ url_for('provider.order') }}">Book Now</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="card">
+            <article class="media ml-2">
+                <img class="rounded-circle mr-3 mt-2" style="width: 100px; height: 100px;" src="{{ url_for('static', filename='Images/female.jpg') }}">
+                <div class="media-body">
+                    <h5 class="mt-0" style = "text-decoration: none; font-weight: 700;">Agness</h5>
+                    <h2>House Keeping</h2>
+                    <hr>
+                      <p>Ever wanted to go out for a trip and you had no one to look after your house while your gone?</p>
+                      <p>Well our team keeps your house safety and makes sure everything is working great.</p>
+                      <p>So no stressing how your house is ,just enjoy your trip while we look after it.</p>
+                    <div>
+                        <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{{ url_for('provider.order') }}">Book Now</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+{% endblock %}
