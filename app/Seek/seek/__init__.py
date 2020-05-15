@@ -21,8 +21,10 @@ def create_app(config_class=Config):
     from seek.users.routes import users
     from seek.provider.routes import provider
     from seek.main.routes import main
+    from seek.errors.handlers import errors
     app.register_blueprint(users)
     app.register_blueprint(provider)
     app.register_blueprint(main)
+    app.register_blueprint(errors)
 
     return app

@@ -6,19 +6,6 @@ from seek.users.forms import RegistrationForm, LoginForm, SignupForm
 
 users = Blueprint('users', __name__)
 
-@users.route('/signup', methods=['GET', 'POST'])
-def signup():
-    if current_user.is_authenticated:
-        return redirect(url_for('main.services'))
-    form = SignupForm()
-    if form.validate_on_submit():
-        hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
-        user = User(username=form.username.data, email=form.email.data, password=hashed_password)
-        db.session.add(user)
-        db.session.commit()
-        flash('Your account has been created! You are now able to log in', 'success')
-        return redirect(url_for('users.login'))
-    return render_template('signup.html', title='SignUp', form=form)
 
 @users.route('/login',methods=['GET','POST'])
 def login():
@@ -41,14 +28,4 @@ def logout():
     logout_user()
     return redirect(url_for("provider.services"))
 
-@users.route('/register', methods=['GET', 'POST'])
-def register():
-    form = RegistrationForm()
-    if form.validate_on_submit():
-        hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
-        provider = Provider(username=form.username.data, email=form.email.data, phone_number=form.phone_number.data, password=hashed_password)
-        db.session.add(provider)
-        db.session.commit()
-        flash('Your account has been successfully created! You are now available for booking services.', 'success')
-        return redirect(url_for('main.home'))
-    return render_template('register.html', title = "Register", form=form)
+
