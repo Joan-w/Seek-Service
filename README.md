@@ -24,7 +24,7 @@ CSS
 
 ### Live Link
 
-You can view this application by navigating on your browser to: 
+You can view this application by navigating on your browser to: https://aqueous-badlands-72995.herokuapp.com/
 
 ### BDD
 
