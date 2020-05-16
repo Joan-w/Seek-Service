@@ -2,7 +2,7 @@
 
 ##### An online home services booking app.
 
-![Screenshot from 2020-05-15 17-07-49](https://user-images.githubusercontent.com/58691817/82059817-3af8c500-96cf-11ea-81e2-d876b6e635b8.png)
+![Screenshot from 2020-05-16 18-55-58](https://user-images.githubusercontent.com/58691817/82124337-13752b80-97a7-11ea-97b4-43541518f618.png)
 
 
 ### Contributors
